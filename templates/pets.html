@@ -1,0 +1,8 @@
+<h2>Available Pets</h2>
+<ul>
+{% for pet in pets %}
+  <li>{{ pet['name'] }} ({{ pet['species'] }}) - 
+      <a href="/adopt/{{ pet['pet_id'] }}">Adopt</a></li>
+{% endfor %}
+</ul>
+<a href="/">Back</a>
